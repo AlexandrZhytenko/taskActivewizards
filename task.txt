@@ -1,0 +1,53 @@
+Добрый день, Александр.
+
+Спасибо за ваш интерес к данному направлению и отклик на мое письмо.
+Следующим шагом я предлагаю вам пройти тестовое задание для выявления реального уровня знаний, а также скорости обучения по целевым технологиям:
+
+1. Необходимо сделать простое одностраничное веб-приложение для визуализации данных.
+
+a. взять файл с данными http://jsonstudio.com/wp-content/uploads/2014/02/world_bank.zip ;
+b. загрузить его в MongoDB:
+• название БД: world_bank;
+• название коллекции: world;
+c. потом поднять Flask приложение и соединиться с MongoDB;
+d. вытащить коллекцию и передать на front-end следующие данные:
+• project_name - наименование проекта;
+• countryname - страна;
+• lendprojectcost - сумма проекта;
+
+Примечание. В data sample присутствуют данные о регионах, например:
+
+'countryname': 'Middle East and North Africa'
+'countryname': 'Africa'
+'countryname': 'South Asia'
+
+Такие значение нужно пропустить и отобразить только страны.
+
+e. на front-end надо эти данные принять с помощью d3; и
+f. отобразить на карте мира:
+• choropleth map по количеству инвестированных средств;
+• в popup отобразить project_name, countryname и lendprojectcost;
+• а также сумму по всем проектам в данной стране.
+
+В качестве результата работы обратно вышлите:
+а. скриншот;
+b. код проекта (в zip архиве);
+c. инструкцию по запуску.
+
+Лучше всего это делать из под Ubuntu.
+
+Полезные ссылки:
+Как поставить виртуальную Ubuntu: http://activewizards.com/blog/installation-and-running-ubuntu-virtual-box/
+Документация по Flask: http://flask.pocoo.org/
+Первые шаги с MongoDB: http://activewizards.com/blog/practical-mongodb-in-10-minutes/
+Основа для карты на d3.js: https://datamaps.github.io/
+
+2. Для проверки вашего уровня технического английского переведите текст на русский или украинский:
+
+Thankfully, the data is already in a simple CSV format and does not require much cleansing or other preparation to be used with Spark MLlib. Later, it will be of interest to explore some transformations of the data, but it can be used as is to start. The covtype.data file should be extracted and copied into HDFS. This chapter will assume that the file is available at /user/ds/. Start spark-shell.
+The Spark MLlib abstraction for a feature vector is known as a LabeledPoint, which consists of a Spark MLlib Vector of features, and a target value, here called the label. The target is a Double value, and Vector is essentially an abstraction on top of many Double values. This suggests that LabeledPoint is only for numeric features. It can be used with categorical features, with appropriate encoding.
+One such encoding is one-hot or 1-of-n encoding, in which one categorical feature that takes on N distinct values becomes N numeric features, each taking on the value 0 or 1. Exactly one of the N values has value 1, and the others are 0. For example, a categorical feature for weather that can be cloudy, rainy, or clear would become three numeric features, where cloudy is represented by 1,0,0; rainy by 0,1,0; and so on. These three numeric features might be thought of as is_cloudy, is_rainy, and is_clear features. Another possible encoding simply assigns a distinct numeric value to each possible
+value of the categorical feature. For example, cloudy may become 1.0, rainy 2.0, and so on.
+
+Всего хорошего и удачи,
+Екатерина
