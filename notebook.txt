@@ -1,0 +1,10 @@
+Use pip’s freeze command to generate a requirements.txt file for your project:
+If you save this in requirements.txt,
+then you can pip install -r requirements.txt.
+
+https://activewizards.com/blog/practical-mongodb-in-10-minutes/
+
+https://docs.mongodb.com/manual/tutorial/getting-started/
+https://metanit.com/nosql/mongodb/1.3.php
+
+
